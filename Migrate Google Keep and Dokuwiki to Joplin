@@ -1,48 +1,69 @@
-# Migrate Google Keep and Dokuwiki to Joplin
+Migrate Google Keep and Dokuwiki to Joplin
+Google Keep → Joplin (Greek UTF-8 Supported)
 
-**
-Google Keep → Joplin (Greek UTF-8 Supported)**
+This guide explains how to migrate notes from Google Keep into Joplin.
 
-This guide explains how to import notes from Google Keep into Joplin.
+Since the Google Keep plugin is not supported in Joplin Desktop, this method converts Google Keep notes into an Evernote (.enex) file, which can then be imported into Joplin.
 
-I’m sharing this because the Google Keep plugin is not supported in Joplin Desktop.
-The procedure converts Google Keep notes into an Evernote (.enex) export file, which can then be imported into Joplin.
-
-The script requires Python ≥ 3.7 and the parsedatetime library.
+Greek (UTF-8) characters are fully supported.
 
 Requirements
+
+Python 3.7 or newer
+
+Python dependency:
+
 pip install parsedatetime
 
-Steps
+Migration Steps
+1. Export Google Keep data
 
-Go to Google Takeout and request an export of Google Keep.
-Download the generated archive.
+Go to Google Takeout
 
-Extract the archive and navigate to the Keep folder.
+Select Google Keep
 
-Place the Python script in this folder and run:
+Download the generated archive
+
+2. Extract the archive
+
+Extract the downloaded file
+
+Navigate to the Keep folder
+
+3. Convert Google Keep notes to Evernote format
+
+Place the Python script in the Keep folder
+
+Run the following command:
 
 python3 keep-to-enex.py Keep/*.html -o output.enex
 
 
 This will generate an Evernote (.enex) file.
 
-Import the .enex file into Joplin:
-File → Import → ENEX - Evernote Export File (as Markdown)
+4. Import into Joplin
+
+Open Joplin
+
+Go to File → Import → ENEX – Evernote Export File (as Markdown)
+
+Select output.enex
 
 Python Script
+
 GitHub repository:
 https://github.com/athinaok/Joplin-Migration/blob/main/google%20keep%20to%20evernote%20convert%20%20%20-%20%20keep-to-enex.py
 
 Notes
 
-Greek (UTF-8) characters are fully supported.
+Greek (UTF-8) characters are fully supported
 
-The original script is based on:
+This script is based on the original project:
 https://gitlab.com/charlescanato/google-keep-to-evernote-converter
 
-This version adds support for external images, which the original did not handle.
+This version adds support for external images, which the original script does not handle
 
+Related Discussion
 
-Joplin Forum 
+Joplin Forum thread:
 https://discourse.joplinapp.org/t/migration-google-keep-evernote-and-then-joplin/48166
