@@ -1,2 +1,2 @@
 # Joplin-Migration
-Migrate Google Keep to Joplin
+Migrate Google Keep and Dokuwiki to Joplin
