@@ -1,0 +1,150 @@
+#Dokuwiki to Joplin Migration (Windows)
+
+This guide explains how to migrate Dokuwiki content to Joplin using a Python script and Pandoc on Windows.
+
+The migration converts Dokuwiki pages to Markdown, preserves Greek URLs, and keeps attachments and media intact.
+
+Requirements
+
+Windows OS
+
+Python 3.8+
+
+Pandoc (portable Windows executable)
+
+Dokuwiki data folder
+
+Joplin Desktop
+
+Folder Structure
+
+Create the following structure on your local machine:
+
+C:\
+└── migration\
+    ├── dokuwiki_to_japlin.py
+    ├── pandoc.exe
+    ├── pages\
+    ├── media\
+    └── output\
+
+Step-by-Step Instructions
+1. Create Migration Folder
+
+Create a folder:
+
+C:\migration
+
+
+Inside it, create another folder:
+
+C:\migration\output
+
+2. Download the Python Migration Script
+
+Download the script from GitHub:
+
+https://github.com/athinaok/Joplin-Migration/blob/main/dokuwiki_to_japlin.py
+
+
+Save it as:
+
+C:\migration\dokuwiki_to_japlin.py
+
+3. Download Pandoc (Portable)
+
+Download Pandoc for Windows:
+
+https://github.com/jgm/pandoc/releases/download/3.8.3/pandoc-3.8.3-windows-x86_64.zip
+
+
+Extract pandoc.exe
+
+Place it in:
+
+C:\migration\pandoc.exe
+
+No installation required — portable executable is sufficient.
+
+4. Copy Dokuwiki Data
+
+From your Dokuwiki installation, locate the data folder.
+
+Copy the following folders:
+
+pages
+
+media
+
+Paste them into:
+
+C:\migration\
+
+Final path example:
+
+C:\migration\pages
+C:\migration\media
+
+5. Run the Migration Script
+
+Open Command Prompt and run:
+
+cd C:\migration
+python dokuwiki_to_japlin.py
+
+6. Migration Output
+
+A new folder is automatically created:
+
+C:\migration\output
+
+
+This folder contains:
+
+Markdown (.md) files
+
+Converted Dokuwiki pages
+
+Linked media and attachments
+
+Features
+
+✅ Greek URLs supported
+
+✅ Greek attachments supported
+
+✅ Media preserved
+
+✅ Markdown compatible with Joplin
+
+✅ Uses Pandoc for accurate conversion
+
+✅ Code created with ChatGPT assistance
+
+Import into Joplin
+
+Open Joplin Desktop
+
+Go to:
+
+File → Import → MD - Markdown (Directory)
+
+
+Select:
+
+C:\migration\output
+
+
+Confirm import
+
+Your Dokuwiki content will now appear in Joplin.
+
+Notes
+
+Ensure pandoc.exe is in the same folder as the Python script
+
+Do not rename the pages or media folders
+
+Migration logic created with ChatGPT
+Pandoc by John MacFarlane
+Script maintained in this repository
