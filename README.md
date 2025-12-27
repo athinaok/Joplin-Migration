@@ -28,10 +28,9 @@ python3 keep-to-enex.py Keep/*.html -o output.enex
 This will generate an Evernote (.enex) file.
 
 Import the .enex file into Joplin:
-File → Import → ENEX (Evernote)
+File → Import → ENEX - Evernote Export File (as Markdown)
 
 Python Script
-
 GitHub repository:
 https://github.com/athinaok/Joplin-Migration/blob/main/google%20keep%20to%20evernote%20convert%20%20%20-%20%20keep-to-enex.py
 
