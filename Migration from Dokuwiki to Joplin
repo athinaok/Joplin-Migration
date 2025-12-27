@@ -1,4 +1,4 @@
-**Dokuwiki to Joplin Migration (Windows)**
+Dokuwiki to Joplin Migration (Windows)
 
 This guide explains how to migrate Dokuwiki content to Joplin using a Python script and Pandoc on Windows.
 
@@ -64,7 +64,8 @@ Place it in:
 
 C:\migration\pandoc.exe
 
-No installation required — portable executable is sufficient.
+
+No installation required — the portable executable is sufficient.
 
 4. Copy Dokuwiki Data
 
@@ -79,6 +80,7 @@ media
 Paste them into:
 
 C:\migration\
+
 
 Final path example:
 
@@ -145,6 +147,12 @@ Ensure pandoc.exe is in the same folder as the Python script
 
 Do not rename the pages or media folders
 
+Large Dokuwiki installations may take several minutes
+
+Credits
+
 Migration logic created with ChatGPT
+
 Pandoc by John MacFarlane
+
 Script maintained in this repository
