@@ -46,3 +46,7 @@ The original script is based on:
 https://gitlab.com/charlescanato/google-keep-to-evernote-converter
 
 This version adds support for external images, which the original did not handle.
+
+
+Joplin Forum 
+https://discourse.joplinapp.org/t/migration-google-keep-evernote-and-then-joplin/48166
