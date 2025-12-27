@@ -1,10 +1,7 @@
-# Joplin-Migration
-Migrate Google Keep and Dokuwiki to Joplin
+# Migrate Google Keep and Dokuwiki to Joplin
 
 **
 Google Keep → Joplin (Greek UTF-8 Supported)**
-
-Hello,
 
 This guide explains how to import notes from Google Keep into Joplin.
 
